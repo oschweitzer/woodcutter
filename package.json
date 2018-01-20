@@ -1,8 +1,9 @@
 {
   "name": "woodcutter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A log module based on winston",
   "main": "dist/index.js",
+  "repository": "https://github.com/oschweitzer/woodcutter.git",
   "typings": "definitions/index",
   "typescript": {
     "definition": "definitions/index"
