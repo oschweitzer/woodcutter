@@ -1,6 +1,6 @@
 {
   "name": "woodcutter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A log module based on winston",
   "main": "dist/index.js",
   "typings": "definitions/index",
@@ -21,7 +21,7 @@
     "typescript",
     "winston"
   ],
-  "author": "",
+  "author": "Olivier Schweitzer",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.1.1",
