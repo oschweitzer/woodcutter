@@ -1,6 +1,6 @@
 {
   "name": "woodcutter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A log module based on winston",
   "main": "dist/index.js",
   "typings": "definitions/index",
