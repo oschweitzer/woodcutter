@@ -17,8 +17,21 @@ npm run test
 ## Usage
 
 ```typescript
-import * as woodcutter from 'woodcutter';
+import {WoodCutter} from 'woodcutter';
 
-const logger = new woodcutter.WoodCutter();
-logger.info('This is a log');
+
+function main() {
+  const woodcutter = new WoodCutter({
+    level: 'silly'
+  });
+  woodcutter.debug("Hey debug", 5, "test", {"hello": "world"});
+  woodcutter.info("Hey info");
+  woodcutter.error("Hey error");
+  woodcutter.verbose("Hey verbose");
+  woodcutter.warn("Hey warn");
+  woodcutter.silly("Hey silly");
+  woodcutter.log('verbose', "Hey log info");
+}
+
+main();
 ```
