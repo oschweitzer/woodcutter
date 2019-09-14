@@ -1,23 +1,4 @@
-# WoodCutter
-
-WoodCutter is a small logger based on winston and developed in TypeScript.
-
-## Install
-
-```bash
-npm install --save woodcutter
-```
-
-## Run tests
-
-```bash
-npm run test
-```
-
-## Usage
-
-```typescript
-import {WoodCutter} from 'woodcutter';
+import {WoodCutter} from '../lib/woodcutter';
 
 
 function main() {
@@ -34,4 +15,3 @@ function main() {
 }
 
 main();
-```
