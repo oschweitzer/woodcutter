@@ -1,6 +1,6 @@
 {
   "name": "woodcutter",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A log module based on winston",
   "main": "dist/index.js",
   "repository": "https://github.com/oschweitzer/woodcutter.git",
@@ -12,11 +12,7 @@
     "build:lib": "tsc -p tsconfig.json",
     "build:app": "tsc -p app/tsconfig.json",
     "link:build": "tsc && npm link",
-    "test": "mocha spec/**/*.spec.ts --require ts-node/register --reporter spec",
-    "start": "node index.js",
-    "watch": "tsc -w",
-    "serve": "nodemon -e ts --watch src --exec \"npm run build && npm run start\" ",
-    "release": "standard-version"
+    "test": "mocha spec/**/*.spec.ts --require ts-node/register --reporter spec"
   },
   "keywords": [
     "log",
