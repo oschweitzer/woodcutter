@@ -1,1 +1,1 @@
-export {WoodCutter} from './lib/WoodCutter';
+export {WoodCutter} from './lib/woodcutter';

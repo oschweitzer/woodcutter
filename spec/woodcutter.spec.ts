@@ -1,4 +1,4 @@
-import {WoodCutter} from "../lib/WoodCutter";
+import {WoodCutter} from "../lib/woodcutter";
 import {expect} from 'chai';
 
 describe('WoodCutter', () => {
