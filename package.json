@@ -2,6 +2,7 @@
   "name": "woodcutter",
   "version": "1.0.0",
   "description": "A log module based on winston",
+  "files": ["dist/**/*"],
   "main": "dist/index.js",
   "repository": "https://github.com/oschweitzer/woodcutter.git",
   "typings": "definitions/index",
