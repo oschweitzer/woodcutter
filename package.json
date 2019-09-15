@@ -1,6 +1,6 @@
 {
   "name": "woodcutter",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A log module based on winston",
   "files": [
     "dist/**/*"
