@@ -1,6 +1,6 @@
 {
   "name": "woodcutter",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A log module based on winston",
   "files": [
     "dist/**/*"
@@ -12,7 +12,10 @@
     "build:lib": "rimraf dist && tsc -p tsconfig.json",
     "build:app": "rimraf app-dist && tsc -p app/tsconfig.json",
     "compodoc": "npx compodoc -p tsconfig.json --theme material",
+    "format": "prettier --write \"./**/*.ts\"",
     "link:build": "tsc && npm link",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "lint:fix": "tslint --fix -p tsconfig.json -c tslint.json",
     "test": "mocha spec/**/*.spec.ts --require ts-node/register --reporter spec"
   },
   "keywords": [
@@ -26,7 +29,11 @@
     "@types/chai": "^4.1.1",
     "@types/mocha": "^2.2.46",
     "@types/node": "^9.3.0",
+    "prettier": "^1.18.2",
     "ts-node": "^4.1.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-no-unused-expression-chai": "^0.1.4",
     "typescript": "^3.6.3"
   },
   "dependencies": {
