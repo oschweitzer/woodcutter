@@ -1,9 +1,10 @@
+import {LogLevel} from '../lib/log-level.enum';
 import {WoodCutter} from '../lib/woodcutter';
 
 
 function main() {
   const woodcutter = new WoodCutter({
-    level: 'silly'
+    level: LogLevel.SILLY
   });
   woodcutter.debug("Hey debug", 5, "test", {"hello": "world"});
   woodcutter.info("Hey info");
@@ -11,7 +12,7 @@ function main() {
   woodcutter.verbose("Hey verbose");
   woodcutter.warn("Hey warn");
   woodcutter.silly("Hey silly");
-  woodcutter.log('verbose', "Hey log info");
+  woodcutter.log(LogLevel.VERBOSE, "Hey log info");
 }
 
 main();

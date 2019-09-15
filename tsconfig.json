@@ -6,5 +6,5 @@
     "outDir": "dist",
     "lib": ["es7"]
   },
-  "exclude": ["./app"]
+  "exclude": ["./app/**/*"]
 }

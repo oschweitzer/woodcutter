@@ -17,12 +17,12 @@ npm run test
 ## Usage
 
 ```typescript
-import {WoodCutter} from 'woodcutter';
-
+import {LogLevel} from '../lib/log-level.enum';
+import {WoodCutter} from '../lib/woodcutter';
 
 function main() {
   const woodcutter = new WoodCutter({
-    level: 'silly'
+    level: LogLevel.SILLY
   });
   woodcutter.debug("Hey debug", 5, "test", {"hello": "world"});
   woodcutter.info("Hey info");
@@ -34,4 +34,5 @@ function main() {
 }
 
 main();
+
 ```
