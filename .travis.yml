@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "10"
+
+before_install:
+  - npm i -g npm@latest
+
+install:
+  - npm ci
+
+before_script:
+  - npm run build:lib
+
+deploy:
+  provider: npm
+  email: $EMAIL
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
+  script: npm --no-git-tag-version version $TRAVIS_TAG
