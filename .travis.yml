@@ -10,12 +10,3 @@ install:
 
 before_script:
   - npm run lint
-
-
-deploy:
-  provider: npm
-  email: $EMAIL
-  api_key: $NPM_TOKEN
-  on:
-    tags: true
-  script: npm run build:lib && npm --no-git-tag-version version $TRAVIS_TAG
