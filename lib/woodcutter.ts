@@ -41,7 +41,7 @@ export class WoodCutter {
             "]"
           ).padEnd(this.LEVEL_STRING_SIZE, " ")} | ${
             options.message ? options.message : ""
-          } ${
+          }${
             options.meta && Object.keys(options.meta).length
               ? JSON.stringify(options.meta)
               : ""
