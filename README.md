@@ -34,5 +34,8 @@ function main() {
 }
 
 main();
-
 ```
+
+Console output:
+
+![woodcutter logs screenshot](assets/woodcutter_logs.png)
