@@ -1,4 +1,5 @@
 dist
-app-dist
+coverage
 node_modules
-documentation
+package-lock.json
+LICENSE.md

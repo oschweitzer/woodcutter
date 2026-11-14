@@ -32,3 +32,5 @@ dist
 bin
 app-dist
 **/*.tgz
+coverage
+*.tsbuildinfo
